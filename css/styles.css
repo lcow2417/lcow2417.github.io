@@ -1,0 +1,88 @@
+/* CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rule for header*/
+header {
+    padding: 2em 2em;
+    background-color: #220C34;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+header h1 {
+    font-size: 3.75em;
+}
+
+/*Style rules for navigation area*/
+nav{
+    padding: 1%;
+    list-style-type: none;
+    background-color: #4A147A;
+    text-align: center;
+    font-size: medium;
+    border: 5px solid #fff;
+    border-radius: 20px;
+}
+ 
+nav a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+} 
+/*Style rule for main*/
+main {
+    border-radius: 10px;
+    color: #25083E;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #130321;
+}
+
+div {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #130321;
+    display: block;
+}
+div p , ul{
+    font-size: 1.25em;
+}
+div h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em ;
+}
+div li{
+    margin-left: 300px;
+    text-align: left;
+}
+
+.action {
+    font-size: 1.35em;
+    color:#8521DE;
+    font-weight: bold;
+}
+/*Style rule for footer area*/
+
+footer {
+    border-radius: 20px;
+    background-color: #4A147A;
+}
+footer p {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    padding: 1em 1em;
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+}
