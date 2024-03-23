@@ -35,41 +35,72 @@ nav a{
     padding: 0.5em 1em;
     text-decoration: none;
 } 
-/*Style rule for main*/
+
+/*Style rule for main */
 main {
     border-radius: 10px;
     color: #25083E;
     text-align: center;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px #130321;
 }
 
 div {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px #130321;
     display: block;
 }
-div p , ul{
+
+div p {
     font-size: 1.25em;
 }
-div h1 {
+
+/*Style rule for table*/
+table {
+	width: 90%;
+	margin: 0 auto;
     
-    padding-bottom: 0.5em ;
-}
-div li{
-    margin-left: 300px;
-    text-align: left;
 }
 
-.action {
-    font-size: 1.35em;
-    color:#8521DE;
-    font-weight: bold;
+table, th, tr, td {
+	padding: 2%;
 }
+
+caption {
+    font-family: cursive;
+    color: #220C34;
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: 1%;
+}
+
+th{
+    border: 3px groove #2C074D;
+    background-color: #4A147A;
+    color: #fff;
+}
+
+td {
+    border: 3px groove #7838B2;
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #BB8EE3;
+}
+
+tr:nth-child(even) {
+    background-color: #E3DAEA;
+}
+
+tr:hover {
+    background-color: #770DB4;
+}
+
 /*Style rule for footer area*/
 
 footer {
@@ -87,7 +118,7 @@ footer p a{
     text-decoration: none;
 }
 
-/*Responsive styles*/
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
     /* For tablets and mobile devices */
     header {
@@ -103,10 +134,10 @@ footer p a{
     main {
         max-width: 90%;
     }
-    div p, ul {
+    div p {
         font-size: 1em;
     }
-    div li {
-        margin-left: 0;
+    table {
+        width: 100%;
     }
 }

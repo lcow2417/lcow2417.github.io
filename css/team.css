@@ -27,49 +27,74 @@ nav{
     border: 5px solid #fff;
     border-radius: 20px;
 }
- 
+
 nav a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: inline-block;
     color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
-} 
-/*Style rule for main*/
+}
+
+/*Style rule for main */
 main {
     border-radius: 10px;
     color: #25083E;
     text-align: center;
     max-width: 70%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 10px #130321;
 }
-
-div {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px #130321;
-    display: block;
+figure {
+    position: relative;
+    max-width: 400;
+    margin: 2% auto;
+    border: 8px solid #4A147A;
 }
-div p , ul{
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: #4A147A;
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+
+.grid h1{
+    font-size: 2.5em;
+    padding: 3%;
+}
+
+.grid h2 {
+    font-size: 1.75em;
+}
+
+.grid p {
     font-size: 1.25em;
 }
-div h1 {
-    
-    padding-bottom: 0.5em ;
+
+.grid img{
+    text-align: center;
 }
-div li{
-    margin-left: 300px;
-    text-align: left;
+aside , h1{
+    text-align: center;
+    font-size: 1.25em;
+    color: #220C34;
+    grid-column: 1 / span 2;
 }
 
-.action {
-    font-size: 1.35em;
-    color:#8521DE;
-    font-weight: bold;
-}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+ }
+
 /*Style rule for footer area*/
 
 footer {
@@ -87,26 +112,13 @@ footer p a{
     text-decoration: none;
 }
 
-/*Responsive styles*/
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
     /* For tablets and mobile devices */
-    header {
-        padding: 1em;
-    }
-    header h1 {
-        font-size: 2.5em;
-    }
-    nav {
-        padding: 0.5em;
-        font-size: small;
-    }
     main {
         max-width: 90%;
     }
-    div p, ul {
-        font-size: 1em;
-    }
-    div li {
-        margin-left: 0;
+    figure {
+        max-width: 100%;
     }
 }

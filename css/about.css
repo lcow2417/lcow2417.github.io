@@ -34,8 +34,9 @@ nav a{
     color: #fff;
     padding: 0.5em 1em;
     text-decoration: none;
-} 
-/*Style rule for main*/
+}
+
+/*Style rule for main */
 main {
     border-radius: 10px;
     color: #25083E;
@@ -48,28 +49,33 @@ main {
 
 div {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px #130321;
     display: block;
 }
-div p , ul{
+
+div ol {
     font-size: 1.25em;
-}
-div h1 {
-    
-    padding-bottom: 0.5em ;
-}
-div li{
-    margin-left: 300px;
-    text-align: left;
+    text-align: justify;
+    padding: 10px 50px;
 }
 
-.action {
-    font-size: 1.35em;
+div h1{
+    padding: 10px;
+}
+
+div p {
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.about {
+    font-size: 1.15em;
     color:#8521DE;
     font-weight: bold;
 }
+
 /*Style rule for footer area*/
 
 footer {
@@ -85,28 +91,4 @@ footer p {
 footer p a{
     color: #fff;
     text-decoration: none;
-}
-
-/*Responsive styles*/
-@media only screen and (max-width: 768px) {
-    /* For tablets and mobile devices */
-    header {
-        padding: 1em;
-    }
-    header h1 {
-        font-size: 2.5em;
-    }
-    nav {
-        padding: 0.5em;
-        font-size: small;
-    }
-    main {
-        max-width: 90%;
-    }
-    div p, ul {
-        font-size: 1em;
-    }
-    div li {
-        margin-left: 0;
-    }
 }
